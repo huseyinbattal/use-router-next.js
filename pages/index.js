@@ -1,13 +1,14 @@
-import { useRouter, withRouter } from "next/router";
+import { useRouter } from "next/router";
 
-const Home = ({ router }) => {
-  //const router = useRouter();
+const Home = () => {
+  const router = useRouter();
+
 
   return (
     <div>
-      Home Page<button onClick={() => router.push("/about")}>About</button>
+      <h1>Home Page</h1><br/><button onClick={() => router.push("/about")}>About Page</button>
     </div>
   );
 };
 
-export default withRouter(Home);
+export default Home;
