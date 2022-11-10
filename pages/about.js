@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <div>
-     {!router.isReady?<> <h1>About Page</h1><br/><button onClick={() => router.push("/")}>Home Page</button></>:<h1>Loading...</h1>}
+      <h1>About Page</h1><br/><button onClick={() => router.back()}>Home Page</button>
     </div>
   );
 };
